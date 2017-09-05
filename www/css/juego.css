@@ -17,6 +17,7 @@ body {
 ul {
   padding-left: 0;
   list-style: none;
+  font-size: 13px;
 }
 li {
   padding: 5px 0;
@@ -40,7 +41,7 @@ li::before {
 .col-60{
    width: 600px;
    height: 600px;
-   background-color: rgb(149, 116, 193);
+   background-color: rgb(255, 255, 255);
    padding: 0px;
 }
 
@@ -64,11 +65,13 @@ li::before {
 
 #juego {
    text-align: center;
-   animation: fadein 2s;
    margin: 0px;
-   //float: left;
    padding: 0px;
    border: 0px;
+}
+
+#juego div{
+   animation: fadein 1s;
 }
 
 @keyframes fadein {
@@ -76,14 +79,32 @@ li::before {
   to   { opacity: 1; }
 }
 
-.pieza{
-   //border: 2px solid rgb(119, 249, 50);
-   float: left;
-   width:33%;
-}
 /*
-#juego img{
-   width: 33%;
+.pieza{
    margin: 0px;
+   padding: 0px;
+   border: 0px;
 }
 */
+
+.pieza{
+   //border: 2px solid rgb(119, 249, 50);
+   width:33%;
+   height:33%;
+   float: left;
+
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+}
+
+.pieza img{
+   max-width: 100%;
+   display: block;
+}
+
+#_9{
+   width: 33%;
+   height: 33%;
+   /*max-height: 100%;*/
+}
